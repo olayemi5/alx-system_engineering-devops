@@ -3,3 +3,4 @@
 **The file 3-listfiles contains script of displaying content in long format**
 **The file 4-listmorefiles contains script of displaying all hidden file in long format**
 **The file 5-listfilesdigitonly contains script of display all hidden file in long format and usera user displayed numerically**
+**The file 6-firstdirectory contains script of craete a directory Holberton**
