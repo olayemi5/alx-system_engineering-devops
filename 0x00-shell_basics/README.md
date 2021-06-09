@@ -5,3 +5,4 @@
 **The file 5-listfilesdigitonly contains script of display all hidden file in long format and usera user displayed numerically**
 **The file 6-firstdirectory contains script of craete a directory Holberton**
 **The file 7-movethatfile contains script to move file to folder**
+**The file 8-firstdelete contains script to delete file in /tmp/holberton folder**
