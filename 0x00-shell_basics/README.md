@@ -8,3 +8,4 @@
 **The file 8-firstdelete contains script to delete file in /tmp/holberton folder**
 **The file 9-firstdirdeletion contains script to delete folder holberton**
 **The file 10-back contains script to change working directory to previous directory**
+**The file 11-lists script to list things in working directory**
