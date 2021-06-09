@@ -1,0 +1,1 @@
+**The file 0-current_working_directory contains a script in bash to print the absolute path**
