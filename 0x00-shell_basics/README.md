@@ -10,3 +10,4 @@
 **The file 10-back contains script to change working directory to previous directory**
 **The file 11-lists script to list things in working directory**
 **The file 12-file_type print file type**
+**The file 13-symbolic_link create a symbolic link**
