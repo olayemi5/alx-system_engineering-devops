@@ -1,0 +1,1 @@
+**File countains script for file permissions**
