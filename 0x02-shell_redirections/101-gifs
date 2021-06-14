@@ -1,0 +1,2 @@
+#!/bin/bash
+basename --suffix=.gif -- *.gif | sort -k 1.1f
