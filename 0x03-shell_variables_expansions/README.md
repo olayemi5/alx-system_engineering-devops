@@ -1,0 +1,1 @@
+**Added new read me file to the project sub directory for viarables script**
