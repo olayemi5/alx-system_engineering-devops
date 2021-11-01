@@ -1,22 +1,30 @@
 #!/usr/bin/env bash
-# displays the numbers 1 to 20 and displays
-#+ "bad luck from China" after the 4th loop iteration
-#+ "bad luck from Japan" after the 9th loop iteration
-#+ "bad luck from Italy" after the 17th loop iteration
+# displays numbers from 1 to 20.
 
 COUNTER=1
-while [ "$COUNTER" -le 20 ]; do
-    echo "$COUNTER"
-    case "$COUNTER" in
-	4)
+while [ $COUNTER -lt 21 ]
+do
+    case $COUNTER in
+
+        4)
+	    echo $COUNTER
 	    echo "bad luck from China"
 	    ;;
+	
 	9)
+	    echo $COUNTER
 	    echo "bad luck from Japan"
 	    ;;
+	
 	17)
+	    echo $COUNTER
 	    echo "bad luck from Italy"
 	    ;;
+
+	*)
+	    echo $COUNTER
+	    ;;
     esac
-    let COUNTER=COUNTER+1
+
+    let COUNTER+=1
 done

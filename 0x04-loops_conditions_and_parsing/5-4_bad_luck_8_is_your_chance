@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
-# loops from 1 to 10 and displays
-#+ "bad luck" for the 4th loop iteration
-#+ "good luck" for the 8th loop iteration
-#+ "Holberton School" for the other iterations
+# displays Best School 10 times.
 
 COUNTER=1
-while [ "$COUNTER" -le 10 ]; do
-    if [ $COUNTER -eq 4 ]; then
-	echo "bad luck"
-    elif [ $COUNTER -eq 8 ]; then
-	echo "good luck"
+while [ $COUNTER -lt 11 ]
+do
+    if [ $COUNTER = 4 ]
+    then
+        echo "bad luck"
+    elif [ $COUNTER = 8 ]
+    then
+        echo "good luck"
     else
-	echo "Holberton School"
+        echo "Best School"
     fi
-    let COUNTER=COUNTER+1
+    let COUNTER+=1
 done
