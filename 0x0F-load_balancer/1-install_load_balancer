@@ -1,10 +1,23 @@
 #!/usr/bin/env bash
-# set up load balancer
-sudo apt-get -y install software-properties-common
-sudo add-apt-repository -y ppa:vbernat/haproxy-1.8
-sudo apt-get -y update
-sudo apt-get -y install haproxy
+# task 1
+apt-get -y install haproxy
 
-sudo sed -i -e '$aENABLED=1\n' /etc/default/haproxy 
-sudo sed -i -e '$a\listen http-in\n\tbind :80\n\tbalance roundrobin\n\tserver 525-web-01 35.231.216.93:80 check\n\tserver 525-web-02 35.196.0.213:80 check\n' /etc/haproxy/haproxy.cfg
-sudo service haproxy restart
+# edit config file
+server_config=\
+"
+frontend  dagem-alx-frontend
+        bind *:80
+        mode http
+        default_backend dagem-alx-backend
+backend dagem-alx-backend
+        balance roundrobin
+        server 335-web-01 35.196.185.163:80 check
+        server 335-web-02 34.75.166.190:80 check
+"
+ echo "$server_config" >> /etc/haproxy/haproxy.cfg
+
+ # enable haproxy to be started by init script
+
+ echo "ENABLED=1" >> /etc/default/haproxy
+
+ sudo service haproxy restart
